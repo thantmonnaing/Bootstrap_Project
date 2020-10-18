@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="../photos/Home/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/kzt.css">
+    <link rel="stylesheet" type="text/css" href="../css/all.css">
+    <link rel="stylesheet" href="../css/mystyle.css">
+    <title>Workspace</title>
+</head>
+<body>
+
+  <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bgr">
+        <button class="navbar-toggler" data-target="#Nav" data-toggle="collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-5" id="Nav">
+            <a href="../home.html" class="navbar-brand"><h3>Design Your Amibition</h3></a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link px-3 mx-1" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active px-3 mx-1" href="location.html">Workspace</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3 mx-1" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3 mx-1" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="carousel slide" data-ride="carousel" id="Carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" id="show_image">
+                <img class="img-fluid" src="../photos/images/location2.jpg" alt="" >
+            </div>
+            <div class="bg-text_location">
+                <div class="input-group mb-2 location_select">
+                    <select class="custom-select custom-control-inline bg-white" id="choose_location">
+                        <option value="ygn" selected hidden>Choose Location</option>
+                        <option value="ygn">Yangon</option> 
+                        <option value="mdy">Mandalay</option>
+                        <option value="mlm">Mawlamyine</option>                     
+                    </select>
+                    <div class="input-group-prepend uk-background-fixed ml-2 px-3">
+                        <button class="btn btn-outline-primary" id='searchmap' type="button">Search</button>
+                    </div>        
+                </div>  
+            </div>                
+        </div> 
+    </div>
+
+    <div id="Yangon_map" class="container-fluid map mt-5">
+        <div class="row mx-5">
+            <div class="col-sm-12 col-md-6 col-lg-6" id="card_row">
+                
+            </div>
+    
+            <div class="col-sm-12 col-md-6 col-lg-6 mt-5" id="show_map">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="page-footer pt-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left mt-3 pb-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Design Your Ambition</h6>
+                    <p>Our mission doesn’t end with the entrepreneurs, small businesses and enterprise companies that call us home. We believe in empowering our team to create their own life's work.</p> 
+                </div>
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Our Services</h6>
+                    <ul><li>High-speed Wi-Fi</li><li>Onsite staff</li><li>Business-class printers</li><li>Fitness center</li><li>Mother's room</li><li>IT Support</li></ul>
+                </div>
+                <hr class="w-100 clearfix d-md-none">
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                    <p><i class="fas fa-home mr-3"></i> Myanmar</p>
+                    <p><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+                    <p><i class="fas fa-phone mr-3"></i> 09-979291829</p>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="text-center bgr">
+            <hr>    
+            <div class="row d-flex align-items-center mx-5">
+                <div class="col-md-6 col-lg-6">
+                    <p class="text-center text-md-left">Copyright © 2020 <strong>Design Your Ambitin</strong>. All rights reserved</p>
+                </div>
+                <div class="col-md-6 col-lg-6 text-right">
+                    <a href="https://www.facebook.com" class="text-dark"><i class="fab fa-facebook-square fa-2x mb-3 mx-3"></i></a>
+                    <a href="https://www.instargram.com" class="text-dark"><i class="fab fa-instagram-square fa-2x mb-3 mx-3"></i></a>
+                    <a href="https://www.twitter.com" class="text-dark"><i class="fab fa-twitter-square fa-2x mb-3 ml-3 mr-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>   
+    <script type="text/javascript" src="../bootstrap/jquery.min.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){ 
+            show();      
+
+            $("#searchmap").click(function(){
+                show();
+            })
+                
+        })
+
+
+            function show(){
+                    var city = $("#choose_location").val();
+                    var city_arr="";
+                    var map ="";
+                    var location = [[{title:"T-One Building",address:"21, Yangon-Insein Rd., Infront Of Hlaing Yadanar Mon Housing, Ward (13), Hlaing, Yangon , Myanmar.",phone:"01-519827 , 01-521286"},{title:"River View Tower",address:"68, Kyaung St., Corner of Hnin Si St., Saw Yan Paing (South) Ward, Ahlone, Yangon , Myanmar.",phone:"09-31250839 , 09-252414077"},{title:"Spring Tower",address:"21, Yangon-Insein Rd., Infront Of Hlaing Yadanar Mon Housing, Ward (13), Hlaing, Yangon , Myanmar.",phone:"01-519827 , 01-521286"}],
+                [{title:"Market Tower",address:"21, Yangon-Insein Rd., Infront Of Hlaing Yadanar Mon Housing, Ward (13), Hlaing, Mandalay , Myanmar.",phone:"01-519827 , 01-521286"},{title:"Diamond Tower",address:"68, Kyaung St., Corner of Hnin Si St., Saw Yan Paing (South) Ward, Ahlone, Mandalay , Myanmar.",phone:"09-31250839 , 09-252414077"}],
+                [{title:"T-One Building",address:"21, Yangon-Insein Rd., Infront Of Hlaing Yadanar Mon Housing, Ward (13), Hlaing, Mawlamyine , Myanmar.",phone:"01-519827 , 01-521286"},{title:"River View Tower",address:"68, Kyaung St., Corner of Hnin Si St., Saw Yan Paing (South) Ward, Ahlone, Mawlamyine , Myanmar.",phone:"09-31250839 , 09-252414077"},{title:"Spring Tower",address:"21, Yangon-Insein Rd., Infront Of Hlaing Yadanar Mon Housing, Ward (13), Hlaing, Mawlamyine, Myanmar.",phone:"01-519827 , 01-521286"}]
+                ];
+                var detail = "";
+
+                var map_arr = ['<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d488797.79020234646!2d95.90136958313794!3d16.83960980011405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1949e223e196b%3A0x56fbd271f8080bb4!2sYangon!5e0!3m2!1sen!2smm!4v1602466212890!5m2!1sen!2smm" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>','<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118427.04428164838!2d96.00578320461692!3d21.94050429809389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb6d23f0d27411%3A0x24146be01e4e5646!2sMandalay!5e0!3m2!1sen!2smm!4v1602466256006!5m2!1sen!2smm" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>','<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122445.67321050474!2d97.58914626816113!3d16.453887959783426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c2a8b3d95f5559%3A0x6fafc8c3a8dd3009!2sMawlamyine!5e0!3m2!1sen!2smm!4v1602466275236!5m2!1sen!2smm" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>']
+
+                var images_arr = ["../photos/images/building1.jpg","../photos/images/building2.jpg","../photos/images/building3.jpg","../photos/images/building1.jpg","../photos/images/building2.jpg"];
+
+                if(city == 'ygn'){
+                        city_arr = location[0];
+                        map = map_arr[0];
+                }else if(city == 'mdy'){
+                        city_arr = location[1];
+                        map = map_arr[1];
+                }else{
+                    city_arr = location[2];
+                    map = map_arr[2];
+                }
+
+                $.each(city_arr,function(index,value){
+                    detail+=`
+                    <div class="card mt-5 mb-3 ">
+                    <div class="row">
+                        <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <a href="location2.html" class="text-decoration-none text-dark"><img src="${images_arr[index]}" class="card-img shadow border-0 " style="height: 250px;" alt="...">
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6" >
+                            <a href="location2.html" class="text-decoration-none text-dark"><div class="card-body">
+                                <h5 class="card-title">${value.title}</h5>
+                                <p class="card-text" style="font-size:16px;">${value.address}</p>
+                                <p class="card-text" style="font-size:16px;">${value.phone}</p>
+                            </div></a>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                    
+                    `
+                })
+                $("#card_row").html(detail);
+                $("#show_map").html(map);
+            }    
+
+    </script>
+</body>
+</html>

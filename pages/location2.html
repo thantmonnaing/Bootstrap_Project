@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../photos/Home/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/kzt.css">
+    <link rel="stylesheet" type="text/css" href="../css/all.css">
+</head>
+<body>
+ <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bgr">
+        <button class="navbar-toggler" data-target="#Nav" data-toggle="collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mx-5" id="Nav">
+            <a href="../home.html" class="navbar-brand"><h3>Design Your Amibition</h3></a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link px-3 mx-1" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active px-3 mx-1" href="location.html">Workspace</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3 mx-1" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3 mx-1" href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="carousel slide" data-ride="carousel" id="Carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" id="show_image">
+          
+            </div>        
+        </div>
+    </div>
+
+    <div class="row m-5">
+        <div class="col-sm-6 col-md-4 col-lg-2 my-3">
+            <img src="../photos/images/carosel.jpg" alt="" class="img-fluid banner" id="photo1" />
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 my-3">
+            <img src="../photos/images/carosel1.jpg" alt="" class="img-fluid banner" id="photo2"/>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 my-3">
+            <img src="../photos/images/carosel4.jpg" alt="" class="img-fluid banner" id="photo3"/>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 my-3">
+            <img src="../photos/images/carosel1.jpg" alt="" class="img-fluid banner" id="photo4"/>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 my-3">
+            <img src="../photos/images/carosel2.jpg" alt="" class="img-fluid banner" id="photo5"/>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2 my-3">
+            <img src="../photos/images/carosel1.jpg" alt="" class="img-fluid banner" id="photo6"/>
+        </div>
+    </div>
+
+<!-- services -->
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12">
+                <h1 class="my-5">Our Services</h1>
+                <div class="" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseOne">
+                                    <h4>Cold & Hot Drinks</h4>
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="row text-center" id="row_image">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseTwo" >
+                                    <h4>Membership</h4>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="row my-5">
+                                    <div class="col-sm-6 col-md-6 col-lg-6">
+                                        <div class="border">
+                                            <form class="m-4">
+                                                <div class="form-group">
+                                                    <input type="text" name="fullname" class="form-control" id="fullname" placeholder="Full Name">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="email" name="email" class="form-control" id="email" placeholder="Your Email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="number" name="phno" class="form-control" id="phno" placeholder="Phone Number">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="number" name="period" class="form-control" id="period" placeholder="Enter membership period (At least 7 days)">
+                                                </div>
+                                                <div class="row">                           
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                                                        <div class="form-group date">
+                                                            <label>Start date</label>
+                                                            <input class="form-control" type="date" id="start_date" name="start_date">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                                                        <div class="form-group date">
+                                                            <label>End date</label>
+                                                            <input class="form-control" type="date" id="end_date" name="end_date" >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">                           
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                                                        <div class="form-group date">
+                                                            <label>Start time</label>
+                                                            <input class="form-control" type="time" id="start_time" name="start_time">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                                                        <div class="form-group date">
+                                                            <label>End time</label>
+                                                            <input class="form-control" type="time" id="end_time" name="end_time" >
+                                                        </div>
+                                                    </div>
+                                                </div>                  
+                                                <button class="btn btn-success btn-lg btn-block">Register</button>                  
+                                            </form>
+                                        </div>              
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 col-lg-6 pl-5">
+                                        <h5>Why join?</h5>
+                                        <p>                     
+                                        </p>
+
+                                        <p>Joining a membership is a good career move for just about anyone. Here are a few of the benefits of joining a membership : </p>
+                                        <ul>
+                                            <li>Boost your career: Whether you are a student, resident or sub-speciality expert, there’s a membership package to match every career stage and meet your friends together.</li>
+                                            <li>Save money: members get a 10% discount off their membership fee</li>
+                                            <li>Tip: Host office hours no set agenda, just an open forum to ask questions or chat over a coffee. </li>
+                                        </ul>                               
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed text-decoration-none" type="button" data-toggle="collapse" data-target="#collapseThree">
+                                    <h4>Other Services</h4>
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <h4 class="text-dark text-center mt-4">Health and safety measures</h4>
+                                <div class="row mx-5">
+                                    <div class="card bg-light my-2" style="width: 60rem;">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Enhanced cleaning services</h6>
+                                            <div class="float-right pl-5"><i class="fas fa-pump-soap fa-2x"></i></div>
+                                            <p class="card-text">In addition to WeWork’s normal cleaning routine, we are cleaning “high-touch” surfaces and “high-traffic” areas every two hours during business hours to mitigate the spread of COVID-19.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-light " style="width: 60rem;">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Hands-free dispensers</h6>
+                                            <div class="float-right pl-5"><i class="fas fa-hand-holding-water fa-2x"></i></div>
+                                            <p class="card-text">Both hands-free wipe dispensers and hand sanitizer dispensers will be conveniently located throughout common spaces for all members.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <h4 class="text-dark text-center mt-4">Standard WeWork amenities</h4>
+                                <div class="row mx-5">
+                                    <div class="card bg-light my-2" style="width: 60rem;">
+                                        <div class="card-body">
+                                            <h6 class="card-title">High-speed Wi-Fi</h6>
+                                            <div class="float-right pl-5"><i class="fas fa-wifi fa-2x"></i></div>
+                                            <p class="card-text">Hook yourself up to hard-wired Ethernet or secure Wi-Fi, including IT support and guest log-in functionality.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="card bg-light" style="width: 60rem;">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Business-class printers</h6>
+                                            <div class="float-right pl-5"><i class="fas fa-print fa-2x"></i></div>
+                                            <p class="card-text">Every floor has its own space stocked with a business-class printer, office supplies, and paper shredder.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mx-5">
+                                    <div class="card bg-light my-2" style="width: 60rem;">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Phone booths</h6>
+                                            <div class="float-right pl-5"><i class="fas fa-phone-alt fa-2x"></i></div>
+                                            <p class="card-text pr-5">Built as quiet spaces for quick phone calls, we’re making our phone booths safer and more comfortable. Phone booths will be cleaned and disinfected every 2 hours, and doors will be left open for easy air circulation.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="card bg-light" style="width: 60rem;">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Meeting rooms</h6>
+                                            <div class="float-right pl-5"><i class="far fa-handshake fa-2x"></i></div>
+                                            <p class="card-text pr-5">We’ve decreased capacity, removed chairs, and identified ‘safe to occupy’ seats where applicable. New meeting room capacities are reflected on the member app.Signage at the door and on the table reiterates how to sit safely in the room.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <h4 class="text-dark text-center mt-4">Unique to this building</h4>
+                                <div class="row mx-5">
+                                    <div class="card bg-light my-2" style="width: 60rem;">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Parking</h6>
+                                            <div class="float-right pl-5"><i class="fas fa-car fa-2x"></i></div>
+                                            <p class="card-text">Life’s too short to circle the block looking for a spot. Commute like a pro thanks to a vehicular home-away-from-home. Prices and rates vary by location.</p>
+                                        </div>                  
+                                    </div>
+                                    <div class="card bg-light" style="width: 60rem;">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Fitness Center</h6>
+                                            <div class="float-right pl-5"><i class="fas fa-dumbbell fa-2x"></i></div>
+                                            <p class="card-text">If working out helps get the work done, seamlessly context-shift with a gym right in the building or development.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mx-5">
+                                    <div class="card bg-light my-2" style="width: 60rem;">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Food hall</h6>
+                                            <div class="float-right pl-5"><i class="fas fa-utensils fa-2x"></i></div>
+                                            <p class="card-text pr-5">Onsite dining facility and seasonal menus make lunchtime easy and more interesting.</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="card bg-light" style="width: 60rem;">
+                                        <div class="card-body">
+                                            <h6 class="card-title">Shower</h6>
+                                            <div class="float-right pl-5"><i class="fas fa-shower fa-2x"></i></div>
+                                            <p class="card-text pr-5">For all those who bike to work or enjoy a morning workout session, freshen up with ease thanks to onsite showers.</p>
+                                        </div>
+                                    </div>
+                                </div>                                
+
+                                <!--Service End-->
+                                
+                                <h4 class="m-5">Not includes</h4>
+                                <div class="row my-4 mx-5">
+                                    <i class="fas fa-chess-knight fa-1x pr-3"></i>
+                                    <div class="float-right" style="text-decoration: line-through;">Recreational games</div>
+                                </div>
+                                <div class="row my-4 mx-5">
+                                    <i class="fas fa-microphone-alt fa-1x pr-3"></i>
+                                    <div class="float-right " style="text-decoration: line-through;">Karaoke room</div>
+                                </div>
+                                <div class="row my-4 mx-5">
+                                    <i class="fas fa-store fa-1x pr-3"></i>
+                                    <div class="float-right"style="text-decoration: line-through;">Honesty market</div>
+                                </div>
+                                <div class="row my-4 mx-5">
+                                    <i class="fas fa-swimming-pool fa-1x pr-3"></i>
+                                    <div class="float-right"style="text-decoration: line-through;">swimming pool</div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>            
+        </div>
+    </div>
+
+    <div class="row m-5 text-right">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <button type="button" class="btn btn-success book_btn mr-5" data-target="#MODAL" data-toggle="modal"><h4>Book</h4></button>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="text-center bgr">
+            <hr>  
+            <div class="row d-flex align-items-center mx-5">
+                <div class="col-md-6 col-lg-6">
+                    <p class="text-center text-md-left">Copyright © 2020 <strong>Design Your Ambitin</strong>. All rights reserved</p>
+                </div>
+                <div class="col-md-6 col-lg-6 text-right">
+                    <a href="https://www.facebook.com" class="text-dark"><i class="fab fa-facebook-square fa-2x mb-3 mx-3"></i></a>
+                    <a href="https://www.instargram.com" class="text-dark"><i class="fab fa-instagram-square fa-2x mb-3 mx-3"></i></a>
+                    <a href="https://www.twitter.com" class="text-dark"><i class="fab fa-twitter-square fa-2x mb-3 ml-3 mr-5"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../bootstrap/jquery.min.js"></script>
+    <script src="../jquery.flip.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var image = `<img class="img-fluid" src="../photos/images/carosel.jpg" alt="Second slide">`;
+            $("#show_image").html(image);
+            $("#photo1").click(function(){
+                var image1 = `<img class="img-fluid" src="../photos/images/carosel.jpg" alt="Second slide">`;
+                $("#show_image").html(image1);
+            })
+            $("#photo2").click(function(){
+                var image2 = `<img class="img-fluid" src="../photos/images/carosel1.jpg" alt="Second slide">`;
+                $("#show_image").html(image2);
+            })
+            $("#photo3").click(function(){
+                var image3 = `<img class="img-fluid" src="../photos/images/carosel4.jpg" alt="Second slide">`;
+                $("#show_image").html(image3);
+            })
+            $("#photo4").click(function(){
+                var image4 = `<img class="img-fluid" src="../photos/images/carosel1.jpg" alt="Second slide">`;
+                $("#show_image").html(image4);
+            })
+            $("#photo5").click(function(){
+                var image5 = `<img class="img-fluid" src="../photos/images/carosel2.jpg" alt="Second slide">`;
+                $("#show_image").html(image5);
+            })
+            $("#photo6").click(function(){
+                var image6 = `<img class="img-fluid" src="../photos/images/carosel1.jpg" alt="Second slide">`;
+                $("#show_image").html(image6);
+            })
+
+            // cold & hot drinks
+
+            var drinks = '';
+            var items = [{photo:"../photos/drinks/americano.png",name:"Americano"},{photo:"../photos/drinks/cappuccino.png",name:"Cappuccino"},{photo:"../photos/drinks/espresso.png",name:"Espresso"},{photo:"../photos/drinks/latte.png",name:"Latte"},{photo:"../photos/drinks/mocha-latte.png",name:"Mocha-latte"},{photo:"../photos/drinks/icey-latte.png",name:"Icey-Latte"},{photo:"../photos/drinks/cola.png",name:"Icey-Cola"},{photo:"../photos/drinks/cola-bottle.png",name:"Cola"},{photo:"../photos/drinks/engry1.png",name:"Red Bull"},{photo:"../photos/drinks/engry2.png",name:"String"},{photo:"../photos/drinks/minute1.png",name:"Strawberry"},{photo:"../photos/drinks/minute.png",name:"Pink Guava"},{photo:"../photos/drinks/orange3.png",name:"Orange"},{photo:"../photos/drinks/green-apple2.png",name:"Green Apple"},{photo:"../photos/drinks/juice1.png",name:"Passion"},{photo:"../photos/drinks/mango.png",name:"Mango"},{photo:"../photos/drinks/orange1.png",name:"Orange"},{photo:"../photos/drinks/orange2.png",name:"Orange"},{photo:"../photos/drinks/papaya.png",name:"Papaya"},{photo:"../photos/drinks/pineapple.png",name:"Pineapple"},{photo:"../photos/drinks/starfruit.png",name:"Starfruit"},{photo:"../photos/drinks/strawberry.png",name:"Strawberry"},{photo:"../photos/drinks/water-melon.png",name:"Water-melon"},{photo:"../photos/drinks/dragon-fruit.png",name:"Dragon-fruit"}
+            ];
+
+            $.each(items,function(index,value){
+                drinks+=`
+                    <div class="col-sm-6 col-md-4 col-lg-2 my-3">
+                    <div class="mx-1 py-3 border-radius">
+                        <img src="${value.photo}" class="img-fluid">
+                        <h5 class="mt-2">${value.name}</h5>
+                        </div>
+                    </div>
+                `;
+            })
+
+            $("#row_image").html(drinks);
+        })
+    </script>  
+</body>
+</html>
+
+
+<div class="modal fade" id="MODAL">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content"> 
+        <div class="modal-body">          
+          <form class="my-3">
+            <div class="form-group">
+              <input type="text" name="fullname" class="form-control" id="fullname" placeholder="Full Name">
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+              <input type="number" name="phno" class="form-control" id="phno" placeholder="Phone Number">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="date" id="date" name="date">
+            </div>
+            <div class="row">             
+              <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                <div class="form-group date">
+                  <label >Start time</label>
+                  <input class="form-control" type="time" id="start_date" name="start_date">
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+                <div class="form-group date">
+                  <label >End time</label>
+                  <input class="form-control" type="time" id="end_date" name="end_date" >
+                </div>
+              </div>
+            </div>
+            <div class="float-right mt-5">
+              <button class="btn btn-secondary px-4 mr-3" data-dismiss="modal">Cancel</button>
+              <button class="btn btn-success px-4">Book</button>
+            </div>            
+          </form>
+        </div>
+      </div>      
+    </div>
+</div>
